@@ -91,6 +91,72 @@ The ingredients are hidden in a cursed cemetery, guarded by the spirits of those
 
 *Intuitive interface with options for Play, Settings, Scores, and Quit*
 
+### Gameplay Core
 
+**Dynamic Camera**
+Smoothly follows the character across the entire map, offering a cinematic experience.
+
+<img src="imgs/npc_dialogue.png" width="350">
+
+
+
+**Advanced Platforming**
+Explore on ground, bridges, clouds, and many other surfaces. Each level introduces new platforming challenges.
+**Destructible Objects**
+Discover potions by breaking strategically placed crates and barrels on the map.
+
+<img src="imgs/platforming_and_barrels.png" width="350">
+
+**Fog of War**
+Dark levels limit player visibility, creating tension and requiring careful exploration.
+
+<img src="imgs/enemy_golems.png" width="350">
+
+**Trap System**
+Avoid lethal spikes, automated cannons, and toxic tar zones that require quick reflexes and planning.
+
+<img src="imgs/trap.png" width="350">
+<img src="imgs/cannon.png" width="350">
+
+### Enemy Types
+
+**Sword Skeletons**
+The first enemies encountered, guarding the cemetery entrance. They offer a gentle introduction to the game's combat system.
+
+<img src="imgs/skelly_enemy.png" width="350">
+
+
+**Mace Skeletons**
+Stronger and more aggressive variants that can occasionally spawn poison potions. Defeating them requires more advanced tactics.
+
+<img src="imgs/tough_skelly.png" width="350">
+
+
+**Golems**
+Massive crypt guardians that increase in speed and aggression when wounded. A major danger requiring careful resource management.
+
+
+<img src="imgs/golem_attacking.png" width="350">
+
+
+### Boss Fight
+**Valthros (Final Boss)**
+The evil wizard with devastating attacks, both melee and ranged. Permanent health bar on screen. The final confrontation requires all skills learned throughout the game.
+
+<img src="imgs/boss.png" width="350">
+<img src="imgs/boss_dash.png" width="350">
+
+
+### Interfaces and Systems
+
+<img src="imgs/settings.png" width="350">
+
+
+
+<img src="imgs/level_completed_screen.png" width="350">
+
+
+
+<img src="imgs/you_died_screen.png" width="350">
 
 
