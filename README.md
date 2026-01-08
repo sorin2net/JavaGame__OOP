@@ -149,14 +149,14 @@ The evil wizard with devastating attacks, both melee and ranged. Permanent healt
 
 ### Interfaces and Systems
 
+**Settings**
+
 <img src="imgs/settings.png" width="350">
 
 
+**Level Completed and Death Screen**
 
 <img src="imgs/level_completed_screen.png" width="350">
-
-
-
 <img src="imgs/you_died_screen.png" width="350">
 
 
