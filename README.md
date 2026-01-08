@@ -13,32 +13,6 @@ Red Hood, a brave and skilled wizard, discovers an ancient manuscript that revea
 
 The ingredients are hidden in a cursed cemetery, guarded by the spirits of those who tried and failed to create the potion. Red Hood must face waves of enemies, deadly traps, and the darkness itself to stop Valthros and save the world.
 
-### ✨ Features
-
-**Gameplay**
-* **5 Progressive Levels** - Each level introduces new mechanics and increases in difficulty
-* **Dual Combat System** - Melee and ranged attacks with stamina management
-* **Ingredient Collection** - Find magic potions to progress and win
-* **NPC Interaction** - Friendly wizards offer tips and stories
-* **Fog of War System** - Limited visibility in dark levels
-* **Save/Load System** - Save progress and continue later
-
-**Enemies and Challenge**
-* **4 Unique Enemy Types** - Each with its own mechanics and distinct AI
-* **Epic Boss Fight** - Final confrontation with Valthros, the evil wizard
-* **Progressive Design** - Every mechanic learned is essential to finish the game
-* **Strategic Positioning** - Enemies are placed to create tactical challenges
-
-**Audio and Atmosphere**
-* **Original Soundtrack** - 3 musical tracks for menu and levels
-* **Sound Effects** - 9 sound effects for actions and interactions
-* **Full Audio Control** - Adjust music and effects volume independently
-
-**OOP Architecture**
-* **Modular Structure** - Clean, organized, and easy-to-maintain code
-* **OOP Principles** - Encapsulation, inheritance, polymorphism, and abstraction
-* **Design Patterns** - Factory Method, Abstract Factory, State Pattern
-* **SQL Database** - Data persistence and player progress
 
 
 
@@ -287,51 +261,51 @@ Each state has its own update and render logic, allowing for a clear separation 
 The event system coordinates interactions between components for collisions, item collection, enemy elimination, and damage management.
 
 
-## 🏛️ Structura Proiectului
+## 🏛️ Project Structure
 
-```
+```text
 src/
-├── audio/              # Sistem audio (muzică, efecte sonore)
+├── audio/              # Audio system (music, sound effects)
 │   └── AudioPlayer.java
-├── entities/           # Entități de joc
-│   ├── Factory/        # Factory patterns pentru entități
-│   ├── Player.java     # Personajul principal
-│   ├── Enemy.java      # Clasa abstractă pentru inamici
-│   ├── Boss.java       # Boss final - Valthros
-│   ├── Skelly.java     # Skeleton inamici
-│   ├── Golem.java      # Golem inamici
-│   ├── Npc.java        # Personaje non-combat
+├── entities/           # Game entities
+│   ├── Factory/        # Factory patterns for entities
+│   ├── Player.java     # Main character
+│   ├── Enemy.java      # Abstract class for enemies
+│   ├── Boss.java       # Final Boss - Valthros
+│   ├── Skelly.java     # Skeleton enemies
+│   ├── Golem.java      # Golem enemies
+│   ├── Npc.java        # Non-combat characters
 │   └── EnemyManager.java
-├── gamestates/         # State pattern pentru stări
+├── gamestates/         # State pattern implementation
 │   ├── Gamestate.java
 │   ├── Menu.java
 │   ├── Playing.java
 │   ├── GameOptions.java
 │   └── Scores.java
-├── levels/             # Sistem de nivele
+├── levels/             # Level system
 │   ├── Level.java
 │   └── LevelManager.java
-├── Objects/            # Obiecte interactive
-│   ├── Factory/        # Abstract Factory pentru obiecte
+├── Objects/            # Interactive objects
+│   ├── Factory/        # Abstract Factory for objects
 │   ├── GameObject.java
 │   ├── Potion.java
 │   ├── Projectile.java
 │   ├── Cannon.java
 │   └── ObjectManager.java
-├── ui/                 # Interfață utilizator
+├── ui/                 # User Interface
 │   ├── MenuButton.java
 │   ├── PauseOverlay.java
 │   ├── GameOverOverlay.java
 │   ├── AudioOptions.java
 │   └── VolumeButton.java
-├── utilz/              # Utilitare
+├── utilz/              # Utilities
 │   ├── Constants.java
 │   ├── HelpMethods.java
 │   └── LoadSave.java
-├── inputs/             # Gestionare input
+├── inputs/             # Input management
 │   ├── KeyboardInputs.java
 │   └── MouseInputs.java
-└── main/               # Punct de intrare
+└── main/               # Entry point
     ├── Game.java
     ├── GamePanel.java
     ├── GameWindow.java
