@@ -101,7 +101,7 @@ The ingredients are hidden in a cursed cemetery, guarded by the spirits of those
 Smoothly follows the character across the entire map, offering a cinematic experience.
 <br><br>
 <p align="center">
-  <img src="imgs/npc_dialogue.png" width="400" alt="Dynamic Camera & NPC">
+  <img src="imgs/npc_dialogue.png" width="700" alt="Dynamic Camera & NPC">
 </p>
 
 <br>
@@ -111,7 +111,7 @@ Smoothly follows the character across the entire map, offering a cinematic exper
 Explore on ground, bridges, clouds, and many other surfaces. Discover potions by breaking strategically placed crates and barrels.
 <br><br>
 <p align="center">
-  <img src="imgs/platforming_and_barrels.png" width="400" alt="Platforming">
+  <img src="imgs/platforming_and_barrels.png" width="700" alt="Platforming">
 </p>
 
 <br>
@@ -121,7 +121,7 @@ Explore on ground, bridges, clouds, and many other surfaces. Discover potions by
 Dark levels limit player visibility, creating tension and requiring careful exploration.
 <br><br>
 <p align="center">
-  <img src="imgs/enemy_golems.png" width="400" alt="Fog of War">
+  <img src="imgs/enemy_golems.png" width="700" alt="Fog of War">
 </p>
 
 <br>
@@ -130,14 +130,14 @@ Dark levels limit player visibility, creating tension and requiring careful expl
 <br>
 Avoid lethal spikes, automated cannons, and toxic tar zones that require quick reflexes and planning.
 
-<table>
+<table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="imgs/trap.png" alt="Spikes">
+      <img src="imgs/trap.png" alt="Spikes" width="95%">
       <br><i>Lethal Spikes</i>
     </td>
     <td width="50%" align="center">
-      <img src="imgs/cannon.png" alt="Cannons">
+      <img src="imgs/cannon.png" alt="Cannons" width="95%">
       <br><i>Automated Cannons</i>
     </td>
   </tr>
@@ -147,32 +147,32 @@ Avoid lethal spikes, automated cannons, and toxic tar zones that require quick r
 
 ### ⚔️ Enemy Types
 
-<table>
+<table width="100%">
   <tr>
-    <td width="60%">
+    <td width="50%">
       <b>Sword Skeletons</b><br>
       The first enemies encountered, guarding the cemetery entrance. They offer a gentle introduction to the game's combat system.
     </td>
-    <td width="40%" align="center">
-      <img src="imgs/skelly_enemy.png" width="250" alt="Sword Skeleton">
+    <td width="50%" align="center">
+      <img src="imgs/skelly_enemy.png" width="95%" alt="Sword Skeleton">
     </td>
   </tr>
   <tr>
-    <td width="60%">
+    <td width="50%">
       <b>Mace Skeletons</b><br>
       Stronger and more aggressive variants that can occasionally spawn poison potions. Defeating them requires more advanced tactics.
     </td>
-    <td width="40%" align="center">
-      <img src="imgs/tough_skelly.png" width="250" alt="Mace Skeleton">
+    <td width="50%" align="center">
+      <img src="imgs/tough_skelly.png" width="95%" alt="Mace Skeleton">
     </td>
   </tr>
   <tr>
-    <td width="60%">
+    <td width="50%">
       <b>Golems</b><br>
       Massive crypt guardians that increase in speed and aggression when wounded. A major danger requiring careful resource management.
     </td>
-    <td width="40%" align="center">
-      <img src="imgs/golem_attacking.png" width="250" alt="Golem">
+    <td width="50%" align="center">
+      <img src="imgs/golem_attacking.png" width="95%" alt="Golem">
     </td>
   </tr>
 </table>
@@ -185,14 +185,14 @@ Avoid lethal spikes, automated cannons, and toxic tar zones that require quick r
 <br>
 The evil wizard with devastating attacks, both melee and ranged. Permanent health bar on screen. The final confrontation requires all skills learned throughout the game.
 
-<table>
+<table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="imgs/boss.png" alt="Valthros Boss">
+      <img src="imgs/boss.png" alt="Valthros Boss" width="95%">
       <br><i>The Final Confrontation</i>
     </td>
     <td width="50%" align="center">
-      <img src="imgs/boss_dash.png" alt="Boss Dash Attack">
+      <img src="imgs/boss_dash.png" alt="Boss Dash Attack" width="95%">
       <br><i>Devastating Dash Attack</i>
     </td>
   </tr>
@@ -204,18 +204,18 @@ The evil wizard with devastating attacks, both melee and ranged. Permanent healt
 
 **Settings**
 <p align="center">
-  <img src="imgs/settings.png" width="400" alt="Settings Menu">
+  <img src="imgs/settings.png" width="700" alt="Settings Menu">
 </p>
 
 **Game States**
-<table>
+<table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="imgs/level_completed_screen.png" alt="Level Completed">
+      <img src="imgs/level_completed_screen.png" alt="Level Completed" width="95%">
       <br><i>Victory Screen</i>
     </td>
     <td width="50%" align="center">
-      <img src="imgs/you_died_screen.png" alt="Game Over">
+      <img src="imgs/you_died_screen.png" alt="Game Over" width="95%">
       <br><i>Game Over Screen</i>
     </td>
   </tr>
