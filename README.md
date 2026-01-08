@@ -85,7 +85,10 @@ The ingredients are hidden in a cursed cemetery, guarded by the spirits of those
 ### 🖼️ Screenshots
 
 **Main Menu**
+
 <img src="imgs/main_menu.png" width="700">
+
+
 *Intuitive interface with options for Play, Settings, Scores, and Quit*
 
 
