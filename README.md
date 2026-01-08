@@ -204,7 +204,7 @@ The evil wizard with devastating attacks, both melee and ranged. Permanent healt
 
 **Settings**
 <p align="center">
-  <img src="imgs/settings.png" width="700" alt="Settings Menu">
+  <img src="imgs/settings.png" width="400" alt="Settings Menu">
 </p>
 
 **Game States**
