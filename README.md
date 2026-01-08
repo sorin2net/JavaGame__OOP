@@ -220,3 +220,178 @@ The evil wizard with devastating attacks, both melee and ranged. Permanent healt
     </td>
   </tr>
 </table>
+
+
+### 🎯 Levels
+
+**Level 0 - Tutorial**
+* **Goal:** Learn basic controls
+* **Enemies:** None
+* **NPCs:** Instructor Wizards
+* **Focus:** Familiarization with game mechanics
+
+**Level 1 - Cemetery Entrance**
+* **Enemies:** Sword Skeletons
+* **Hazards:** Lethal Spikes
+* **Objects:** Crates, barrels, potions
+* **New Mechanic:** Basic combat and collection
+
+**Level 2 - Deep Cemetery**
+* **Enemies:** Mace Skeletons (stronger variants)
+* **Hazards:** Green Tar (continuous damage), automated cannons
+* **New Mechanic:** Jump boost potion, projectile avoidance
+
+**Level 3 - The Dark Crypt**
+* **Enemies:** Golems (tanks, adaptive behavior)
+* **Hazards:** Fog of War (extremely limited visibility)
+* **New Mechanic:** Exploration in total darkness
+
+**Level 4 - The Final Confrontation**
+* **Boss:** Valthros
+* **Attacks:** Devastating Dash + Magic Projectiles (orbs)
+* **New Mechanic:** Boss fight with complex attack patterns
+* **Special:** Permanent boss health bar
+
+**Victory Conditions:** Kill all enemies, collect all ingredients, and reach the end of the map.
+
+### 🏗️ Technical Architecture
+
+**Implemented Design Patterns**
+
+**Factory Method Pattern**
+Used for creating different types of enemies (**Skeletons**, **Golems**, **Boss**). Each enemy type is generated through a dedicated factory that manages their initialization and configuration, ensuring modular and extensible code.
+
+**Abstract Factory Pattern**
+Implemented for creating interactive game objects (containers and traps). This pattern allows for the coherent generation of related objects such as **barrels**, **crates**, **spikes**, and **tar zones**, maintaining design consistency.
+
+**State Pattern**
+Manages different game states with fluid transitions:
+* **MENU** - Main menu with options
+* **PLAYING** - The active game loop
+* **OPTIONS** - Audio settings screen
+* **SCORES** - Player leaderboard
+* **QUIT** - Exiting the game
+
+Each state has its own update and render logic, allowing for a clear separation of responsibilities.
+
+**Observer Pattern (Implicit)**
+The event system coordinates interactions between components for collisions, item collection, enemy elimination, and damage management.
+
+
+## 🏛️ Structura Proiectului
+
+```
+src/
+├── audio/              # Sistem audio (muzică, efecte sonore)
+│   └── AudioPlayer.java
+├── entities/           # Entități de joc
+│   ├── Factory/        # Factory patterns pentru entități
+│   ├── Player.java     # Personajul principal
+│   ├── Enemy.java      # Clasa abstractă pentru inamici
+│   ├── Boss.java       # Boss final - Valthros
+│   ├── Skelly.java     # Skeleton inamici
+│   ├── Golem.java      # Golem inamici
+│   ├── Npc.java        # Personaje non-combat
+│   └── EnemyManager.java
+├── gamestates/         # State pattern pentru stări
+│   ├── Gamestate.java
+│   ├── Menu.java
+│   ├── Playing.java
+│   ├── GameOptions.java
+│   └── Scores.java
+├── levels/             # Sistem de nivele
+│   ├── Level.java
+│   └── LevelManager.java
+├── Objects/            # Obiecte interactive
+│   ├── Factory/        # Abstract Factory pentru obiecte
+│   ├── GameObject.java
+│   ├── Potion.java
+│   ├── Projectile.java
+│   ├── Cannon.java
+│   └── ObjectManager.java
+├── ui/                 # Interfață utilizator
+│   ├── MenuButton.java
+│   ├── PauseOverlay.java
+│   ├── GameOverOverlay.java
+│   ├── AudioOptions.java
+│   └── VolumeButton.java
+├── utilz/              # Utilitare
+│   ├── Constants.java
+│   ├── HelpMethods.java
+│   └── LoadSave.java
+├── inputs/             # Gestionare input
+│   ├── KeyboardInputs.java
+│   └── MouseInputs.java
+└── main/               # Punct de intrare
+    ├── Game.java
+    ├── GamePanel.java
+    ├── GameWindow.java
+    ├── MainClass.java
+    └── ScoreDatabase.java
+
+```
+
+
+
+### 💾 Database - SQLite
+
+The game uses **SQLite** for data persistence, saving player progress, scores, and detailed statistics.
+
+**Functionalities**
+* **Auto Save** - Progress is saved upon level completion and in the pause menu.
+* **Load Game** - Continue from where you left off with the same player.
+* **Global Leaderboard** - Top players based on cumulative scores.
+* **Detailed Statistics** - Tracks defeated enemies, collected potions, and level progress.
+
+**Save/Load System**
+The system saves the exact player position, health status, defeated enemies, and collected items, allowing for precise progress resumption. Data is stored in two main tables: `final_scores` for individual scores and `cumulative_scores` for the player's total progress.
+
+
+### 🔧 Technical Details
+
+**Specifications**
+* **Language:** Java 17+
+* **UI Framework:** Java Swing for the graphical interface
+* **Audio Engine:** `javax.sound.sampled` for music and sound effects
+* **Database:** SQLite JDBC for data persistence
+* **Resolution:** 1456x784 pixels (26x14 tiles)
+* **Performance:** 120 FPS for rendering, 200 UPS for game logic
+
+**Physics System**
+The game implements a custom physics engine for gravity, jumping, and collisions. The collision system is based on tiles and precise hitboxes for entities, ensuring realistic interactions between the character, enemies, and the environment. It includes support for moving platforms, sliding surfaces, and zones with modified physics.
+
+**Combat System**
+The player has two types of attacks - melee for rapid and consistent damage, and ranged for dangerous situations or distant enemies. Ranged attacks consume stamina which regenerates automatically over time. Each enemy type has its own unique attack patterns, timing, and behavior.
+
+**Artificial Intelligence**
+Enemies use a state-based AI system (patrolling, player detection, chasing, attacking) with detection based on line-of-sight. The system checks if the player is within visibility range and if there are obstacles between the enemy and the target. The AI adapts according to the level context and enemy state.
+
+
+### 👥 Development Team
+
+Project developed by students from the Faculty of Automatic Control and Computer Engineering, as part of the Advanced Object-Oriented Programming (PAOO) course.
+
+| Name | Main Contributions |
+| :--- | :--- |
+| **Todiraș Claudiu Gabriel** | Game Loop, State Management, Audio System, NPC System, Documentation |
+| **Dumitriu Denis Gabriel** | Player Input System, UI/Menus, Database (Save/Load), Objects & Traps |
+| **Ghiorghiu Teodor** | Player Entity, Enemy System (Skelly, Golem), Final Boss, Level Design |
+
+
+### 📚 Used Resources
+
+**Video Tutorials**
+* [Kaarin Gaming - Java 2D Game Development Tutorial](#)
+* [RyiSnow - How to Make a 2D Game in Java](#)
+
+**Graphic Assets**
+* [AstroBob - Animated Pixel Art Skeleton](#)
+* [MonoPixelArt - Skeletons Pack](#)
+* [Lionheart963 - Wizard Character Sprites](#)
+* [PixelFrog - Various Asset Packs](#)
+* [itch.io - Free Tileset Collection](#)
+
+**Audio**
+* [Leo Paz - MiniFantasy Dungeon SFX Pack](#)
+
+> **Note:** Some sprites and tiles were custom created by the team using **Piskel** to fit the game's theme.
