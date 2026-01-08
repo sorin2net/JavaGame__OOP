@@ -91,72 +91,132 @@ The ingredients are hidden in a cursed cemetery, guarded by the spirits of those
 
 *Intuitive interface with options for Play, Settings, Scores, and Quit*
 
-### Gameplay Core
+
+
+
+### 🎮 Gameplay Core
 
 **Dynamic Camera**
+<br>
 Smoothly follows the character across the entire map, offering a cinematic experience.
+<br><br>
+<p align="center">
+  <img src="imgs/npc_dialogue.png" width="400" alt="Dynamic Camera & NPC">
+</p>
 
-<img src="imgs/npc_dialogue.png" width="350">
+<br>
 
+**Advanced Platforming & Destructible Objects**
+<br>
+Explore on ground, bridges, clouds, and many other surfaces. Discover potions by breaking strategically placed crates and barrels.
+<br><br>
+<p align="center">
+  <img src="imgs/platforming_and_barrels.png" width="400" alt="Platforming">
+</p>
 
-
-**Advanced Platforming**
-Explore on ground, bridges, clouds, and many other surfaces. Each level introduces new platforming challenges.
-**Destructible Objects**
-Discover potions by breaking strategically placed crates and barrels on the map.
-
-<img src="imgs/platforming_and_barrels.png" width="350">
+<br>
 
 **Fog of War**
+<br>
 Dark levels limit player visibility, creating tension and requiring careful exploration.
+<br><br>
+<p align="center">
+  <img src="imgs/enemy_golems.png" width="400" alt="Fog of War">
+</p>
 
-<img src="imgs/enemy_golems.png" width="350">
+<br>
 
 **Trap System**
+<br>
 Avoid lethal spikes, automated cannons, and toxic tar zones that require quick reflexes and planning.
 
-<img src="imgs/trap.png" width="350">
-<img src="imgs/cannon.png" width="350">
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="imgs/trap.png" alt="Spikes">
+      <br><i>Lethal Spikes</i>
+    </td>
+    <td width="50%" align="center">
+      <img src="imgs/cannon.png" alt="Cannons">
+      <br><i>Automated Cannons</i>
+    </td>
+  </tr>
+</table>
 
-### Enemy Types
+---
 
-**Sword Skeletons**
-The first enemies encountered, guarding the cemetery entrance. They offer a gentle introduction to the game's combat system.
+### ⚔️ Enemy Types
 
-<img src="imgs/skelly_enemy.png" width="350">
+<table>
+  <tr>
+    <td width="60%">
+      <b>Sword Skeletons</b><br>
+      The first enemies encountered, guarding the cemetery entrance. They offer a gentle introduction to the game's combat system.
+    </td>
+    <td width="40%" align="center">
+      <img src="imgs/skelly_enemy.png" width="250" alt="Sword Skeleton">
+    </td>
+  </tr>
+  <tr>
+    <td width="60%">
+      <b>Mace Skeletons</b><br>
+      Stronger and more aggressive variants that can occasionally spawn poison potions. Defeating them requires more advanced tactics.
+    </td>
+    <td width="40%" align="center">
+      <img src="imgs/tough_skelly.png" width="250" alt="Mace Skeleton">
+    </td>
+  </tr>
+  <tr>
+    <td width="60%">
+      <b>Golems</b><br>
+      Massive crypt guardians that increase in speed and aggression when wounded. A major danger requiring careful resource management.
+    </td>
+    <td width="40%" align="center">
+      <img src="imgs/golem_attacking.png" width="250" alt="Golem">
+    </td>
+  </tr>
+</table>
 
+---
 
-**Mace Skeletons**
-Stronger and more aggressive variants that can occasionally spawn poison potions. Defeating them requires more advanced tactics.
+### 💀 Boss Fight
 
-<img src="imgs/tough_skelly.png" width="350">
-
-
-**Golems**
-Massive crypt guardians that increase in speed and aggression when wounded. A major danger requiring careful resource management.
-
-
-<img src="imgs/golem_attacking.png" width="350">
-
-
-### Boss Fight
 **Valthros (Final Boss)**
+<br>
 The evil wizard with devastating attacks, both melee and ranged. Permanent health bar on screen. The final confrontation requires all skills learned throughout the game.
 
-<img src="imgs/boss.png" width="350">
-<img src="imgs/boss_dash.png" width="350">
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="imgs/boss.png" alt="Valthros Boss">
+      <br><i>The Final Confrontation</i>
+    </td>
+    <td width="50%" align="center">
+      <img src="imgs/boss_dash.png" alt="Boss Dash Attack">
+      <br><i>Devastating Dash Attack</i>
+    </td>
+  </tr>
+</table>
 
+---
 
-### Interfaces and Systems
+### ⚙️ Interfaces and Systems
 
 **Settings**
+<p align="center">
+  <img src="imgs/settings.png" width="400" alt="Settings Menu">
+</p>
 
-<img src="imgs/settings.png" width="350">
-
-
-**Level Completed and Death Screen**
-
-<img src="imgs/level_completed_screen.png" width="350">
-<img src="imgs/you_died_screen.png" width="350">
-
-
+**Game States**
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="imgs/level_completed_screen.png" alt="Level Completed">
+      <br><i>Victory Screen</i>
+    </td>
+    <td width="50%" align="center">
+      <img src="imgs/you_died_screen.png" alt="Game Over">
+      <br><i>Game Over Screen</i>
+    </td>
+  </tr>
+</table>
