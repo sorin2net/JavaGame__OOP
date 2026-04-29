@@ -353,6 +353,7 @@ Enemies use a state-based AI system (patrolling, player detection, chasing, atta
 ### 👥 Development Team
 
 Project developed by students from the Faculty of Automatic Control and Computer Engineering, as part of the Advanced Object-Oriented Programming (PAOO) course.
+Coordinator Professor: Dumitriu Tiberius
 
 | Name | Main Contributions |
 | :--- | :--- |
